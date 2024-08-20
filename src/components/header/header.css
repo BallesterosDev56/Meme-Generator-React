@@ -1,0 +1,25 @@
+header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 110px;
+  background-color: #6c2386;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.header-left {
+  display: flex;
+  line-height: 60px;
+  margin-left: 5vw;
+}
+.header-left img {
+  padding: 5%;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  margin-right: 5vw;
+  font-size: 20px;
+}

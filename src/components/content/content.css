@@ -1,0 +1,94 @@
+.content-grid {
+    width: 80vw;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+        "top-form bottom-form"
+        "button button"
+        "image image"
+    ;
+}
+
+/* //form: */
+.form {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 80%;
+}
+.form input {
+    border-radius: 8px;
+    border: 1px solid #D5D4D8;
+    text-indent: 10px;
+    font-size: 30px;
+    height: 60px;
+    width: 100%;
+    margin: 10px 0;
+}
+.form  label {
+    font-family: 'Karla', 'Courier New';
+}
+
+/* contenedor form izquieda */
+.top {
+    grid-area: top-form;
+}
+/* contenedor form derecha */
+.bottom {
+    grid-area: bottom-form;
+}
+
+/* contenedor del boton */
+.button-container {
+    grid-area: button;
+    text-align: center;
+    padding: 20px 0;
+}
+.button-container button {
+    border-radius: 5px;
+    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 60px;
+    width: 90.2%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* contenedor de la imagen  */
+.image-container {
+    position: relative;
+    grid-area: image;
+    text-align: center;
+    margin-top: 30px;
+    font-family: impact, sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+.image-container img {
+    width: 500px;
+}
+
+/* textos flotantes */
+.top-text {
+    position: relative;
+    bottom: 75%;
+}
+.bottom-text {
+    position: relative;
+    bottom: 30%;
+}
